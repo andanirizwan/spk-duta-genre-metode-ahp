@@ -49,24 +49,21 @@
 				</thead>
 				<tbody>
 
-				<!-- <?php 
+				<?php 
 				$no = 1;
-				foreach($makanan as $makanan1){ 
+				foreach($kriteria as $kriteria){ 
 				?>
 				<tr>
 					<td><?php echo $no++ ?></td>
-					<td><?php echo $makanan1->nama_makanan ?></td>
-					<td><?php echo $makanan1->karbohidrat ?></td>
-					<td><?php echo $makanan1->protein ?></td>
-					<td><?php echo $makanan1->lemak ?></td>
+					<td><?php echo $kriteria->nama_kriteria ?></td>
+					<td><?php echo $kriteria->bobot_kriteria ?></td>
 					
 					<td>
-					<a href="<?php echo base_url('page/editdatamakanan/'); ?><?php echo $makanan1->id ?>" class="btn btn-info" type="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</a>
-					<a href="<?php echo base_url('page/hapusmakanan/'); ?><?php echo $makanan1->id ?>" class="btn btn-danger" type="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Hapus</a>
+					<a href="<?php echo base_url('page/editkriteria/'); ?><?php echo $kriteria->id ?>" class="btn btn-info" type="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit</a>
 					
 				</tr>
 
-				<?php } ?> -->
+				<?php } ?>
 
 				</tbody>
 				</table>

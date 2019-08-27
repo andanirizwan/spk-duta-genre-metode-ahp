@@ -19,7 +19,7 @@
 
 			<div class="panel panel-default"><div class="panel-body">
 				<div class="text-center"><h2>Login</h2></div>
-				<form action="<?php echo base_url('autentication/login') ?>" method="post" >
+				<form action="<?php echo base_url('LoginController/login') ?>" method="post" >
 				<div class="form-group">
 					<label for="InputUsername">Username</label>
 					<input type="text" class="form-control" type="text" name="username" id="InputUsername" placeholder="Username" required>
