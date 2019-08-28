@@ -36,7 +36,7 @@
 			<div class="col-md-3">	
 				<h3>Penilaian calon duta genre</h3>
 
-				<form action="<?php echo base_url(). 'page/tambahseleksi'; ?>" method="post">
+				<form action="<?php echo base_url(). 'page/updateseleksi'; ?>" method="post">
 
 					<label for="nama">Nama : </label>
 					<select class="form-control" name="id_nama">

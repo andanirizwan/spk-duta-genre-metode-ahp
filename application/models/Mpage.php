@@ -11,14 +11,30 @@ class Mpage extends CI_Model {
     {
         return $this->db->get('kriteria');
     }
-    public function getallmatrik()
+    public function getseleksilk()
     {
-        return $this->db->get('matrik_transformasi');
+        return $this->db->get_where('calon_duta', ['jenis_kelamin' => 'laki_laki']);
+    }
+    public function getseleksipr()
+    {
+        return $this->db->get_where('calon_duta', ['jenis_kelamin' => 'perempuan']);
     }
     public function getallrangking()
     {
-        $this->db->order_by('nilai_alternatif', 'desc');
-        return $this->db->get('matrik_transformasi');
+        $this->db->order_by('total_nilai', 'desc');
+        return $this->db->get('calon_duta');
+    }
+    public function getrangkinglk()
+    {
+        $this->db->where('jenis_kelamin', 'laki_laki');
+        $this->db->order_by('total_nilai', 'desc');
+        return $this->db->get('calon_duta');
+    }
+    public function getrangkingpr()
+    {
+        $this->db->where('jenis_kelamin', 'perempuan');
+        $this->db->order_by('total_nilai', 'desc');
+        return $this->db->get('calon_duta');
     }
     
     public function getByIdduta($id)
@@ -34,10 +50,6 @@ class Mpage extends CI_Model {
     {
          $this->db->insert($table,$data);
     }
-    public function savetransformasi($data,$table)
-    {
-         $this->db->insert($table,$data);
-    }
     public function savekriteria($data,$table)
     {
          $this->db->insert($table,$data);
@@ -48,10 +60,10 @@ class Mpage extends CI_Model {
         $this->db->where('id', $id);
         $this->db->update('calon_duta', $data);
     }
-    public function updatetransformasi($data, $id)
+    public function updateseleksi($data, $id)
     {
         $this->db->where('id', $id);
-        $this->db->update('matrik_transformasi', $data);
+        $this->db->update('calon_duta', $data);
     }
     public function updatekriteria($data, $id)
     {

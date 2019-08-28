@@ -31,7 +31,7 @@
 					<li class="list-group-item"><a href="<?php echo base_url('page/rangkinglk') ?>">laki -laki</a></li>
 					<li class="list-group-item"><a href="<?php echo base_url('page/rangkingpr') ?>">Perempuan</a></li>
 					</ul>
-					<li class="list-group-item"><a href="<?php echo base_url('autentication/logout'); ?>">Logout</a></li>
+					<li class="list-group-item"><a href="<?php echo base_url('LoginController/logout'); ?>">Logout</a></li>
 				</ul>
 
 			</div>
