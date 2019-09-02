@@ -11,16 +11,22 @@ class Page extends CI_Controller {
 
 	public function beranda()
 	{
+		$this->load->view('template/header');
 		$this->load->view('beranda');
+		$this->load->view('template/footer');
 	}
 	public function calonduta()
 	{
 		$data['duta'] = $this->Mpage->getallduta()->result();
+		$this->load->view('template/header');
 		$this->load->view('duta', $data);
+		$this->load->view('template/footer');
 	}
 	public function tambahdataduta()
 	{
+		$this->load->view('template/header');
 		$this->load->view('tambahduta');
+		$this->load->view('template/footer');
 	}
 	public function simpandataduta()
 	{
@@ -48,7 +54,9 @@ class Page extends CI_Controller {
 	public function editdataduta($id){
 		
 		$data['duta']= $this->Mpage->getByIdduta($id)->result();
+		$this->load->view('template/header');
 		$this->load->view('editduta',$data);
+		$this->load->view('template/footer');
 	}
 	public function updateduta()
 	{
@@ -77,12 +85,16 @@ class Page extends CI_Controller {
 	public function kriteria()
 	{
 		$data['kriteria'] = $this->Mpage->getallkriteria()->result();
+		$this->load->view('template/header');
 		$this->load->view('kriteria', $data);
+		$this->load->view('template/footer');
 	}
 	public function editkriteria($id){
 		
 		$data['kriteria']= $this->Mpage->getByIdkriteria($id)->result();
+		$this->load->view('template/header');
 		$this->load->view('editkriteria',$data);
+		$this->load->view('template/footer');
 	}
 	public function updatekriteria()
 	{
@@ -102,7 +114,9 @@ class Page extends CI_Controller {
 	public function seleksi()
 	{
 		$data['seleksi']= $this->Mpage->getallduta()->result();
+		$this->load->view('template/header');
 		$this->load->view('tambahseleksi',$data);
+		$this->load->view('template/footer');
 	}
 	public function updateseleksi()
 	{
@@ -466,31 +480,43 @@ class Page extends CI_Controller {
 	public function hasilpenilaian()
 	{
 		$data['duta'] = $this->Mpage->getallduta()->result();
+		$this->load->view('template/header');
 		$this->load->view('hasilpenilaian', $data);
+		$this->load->view('template/footer');
 	}
 	public function hasilpenilaianlk()
 	{
 		$data['duta'] = $this->Mpage->getseleksilk()->result();
+		$this->load->view('template/header');
 		$this->load->view('hasilpenilaianlk', $data);
+		$this->load->view('template/footer');
 	}
 	public function hasilpenilaianpr()
 	{
 		$data['duta'] = $this->Mpage->getseleksipr()->result();
+		$this->load->view('template/header');
 		$this->load->view('hasilpenilaianpr', $data);
+		$this->load->view('template/footer');
 	}
 	public function rangking()
 	{
 		$data['duta'] = $this->Mpage->getallrangking()->result();
+		$this->load->view('template/header');
 		$this->load->view('rangking', $data);
+		$this->load->view('template/footer');
 	}
 	public function rangkinglk()
 	{
 		$data['duta'] = $this->Mpage->getrangkinglk()->result();
+		$this->load->view('template/header');
 		$this->load->view('rangkinglk', $data);
+		$this->load->view('template/footer');
 	}
 	public function rangkingpr()
 	{
 		$data['duta'] = $this->Mpage->getrangkingpr()->result();
+		$this->load->view('template/header');
 		$this->load->view('rangkingpr', $data);
+		$this->load->view('template/footer');
 	}
 }

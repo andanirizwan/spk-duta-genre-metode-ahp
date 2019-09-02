@@ -1,62 +1,77 @@
+<!-- Content Row -->
+<div class="row">
 
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-xl-3 col-md-6 mb-4">
+  <div class="card border-left-primary shadow h-100 py-2">
+	<div class="card-body">
+	  <div class="row no-gutters align-items-center">
+		<div class="col mr-2">
+		  <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total User</div>
+		  <div class="h5 mb-0 font-weight-bold text-gray-800">25</div>
+		</div>
+		<div class="col-auto">
+		  <i class="fas fa-users fa-2x text-gray-300"></i>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>SPK - Duta Genre (metode ahp)</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/bootstrap/dist/css/bootstrap.css'); ?>">
-	
-</head>
-<body>
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-xl-3 col-md-6 mb-4">
+  <div class="card border-left-success shadow h-100 py-2">
+	<div class="card-body">
+	  <div class="row no-gutters align-items-center">
+		<div class="col mr-2">
+		  <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Laki - Laki</div>
+		  <div class="h5 mb-0 font-weight-bold text-gray-800">11</div>
+		</div>
+		<div class="col-auto">
+		  <i class="fas fa-user fa-2x text-gray-300"></i>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
 
-<nav class="navbar fixed-top navbar-dark bg-primary" style="background-color: #77E592;">
-<center><h1>SPK - Duta Genre (Metode AHP)</h1></center>
-</nav>
-
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-2">
-				<ul class="list-group">
-					<li class="list-group-item"><a href="<?php echo base_url('page/beranda'); ?>">Beranda</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/calonduta'); ?>">Calon Duta</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/kriteria'); ?>">Kriteria</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/seleksi'); ?>">Seleksi</a></li>
-					<ul class="list-group">
-					<li class="list-group-item"><a href="<?php echo base_url('page/hasilpenilaian') ?>">Hasil Penilaian</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/hasilpenilaianlk') ?>">laki -laki</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/hasilpenilaianpr') ?>">Perempuan</a></li>
-					</ul>
-					<ul class="list-group">
-					<li class="list-group-item"><a href="<?php echo base_url('page/rangking') ?>">rangking</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/rangkinglk') ?>">laki -laki</a></li>
-					<li class="list-group-item"><a href="<?php echo base_url('page/rangkingpr') ?>">Perempuan</a></li>
-					</ul>
-					<li class="list-group-item"><a href="<?php echo base_url('LoginController/logout'); ?>">Logout</a></li>
-				</ul>
-
+<!-- Earnings (Monthly) Card Example -->
+<div class="col-xl-3 col-md-6 mb-4">
+  <div class="card border-left-info shadow h-100 py-2">
+	<div class="card-body">
+	  <div class="row no-gutters align-items-center">
+		<div class="col mr-2">
+		  <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Perempuan</div>
+		  <div class="row no-gutters align-items-center">
+			<div class="col-auto">
+			  <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">14</div>
 			</div>
+		  </div>
+		</div>
+		<div class="col-auto">
+		  <i class="fas fa-user fa-2x text-gray-300"></i>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<!-- Content Row -->
+
+<!-- Illustrations -->
+<div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h4 class="m-0 font-weight-bold text-primary">SISTEM PENDUKUNG KEPUTUSAN - METODE AHP</h4>
+                </div>
+                <div class="card-body">
+                  <p>Sistem Pendukung Keputusan adalah sistem yang dapat memberikan kemampuan pemecahan masalah serta kemampuan pengkomunikasian dalam kondisi semi struktur dan tak terstuktur. </p>
+                </div>
+</div>
+
+
+
+
+		
 
 			
 
-			<div class="col-md-10">
-			<div class="jumbotron jumbotron-fluid">
-				<div class="container">
-					<h1 class="display-4">SELAMAT DATANG DI WEBSITE </h1>
-					<p class="lead">SISTEM PENDUKUNG KEPUTUSAN - METODE AHP</p>
-					<h4>Sistem Pendukung Keputusan adalah sistem yang dapat memberikan kemampuan pemecahan masalah serta kemampuan pengkomunikasian dalam kondisi semi struktur dan tak terstuktur. </h4>
-				</div>
-			</div>
-			</div>
-		</div>
-
-			<nav class="navbar fixed-bottom navbar-light bg-light" style="background-color: #77E592;">
-			<center><p class="text-center">&copy Spk - Metode AHP</p></center>
-			</nav>
-	</div>
-
-
-
-
-	
-</body>
-</html>

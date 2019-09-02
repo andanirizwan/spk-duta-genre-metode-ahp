@@ -71,16 +71,13 @@ class Mpage extends CI_Model {
         $this->db->update('kriteria', $data);
     }
 
-    public function deletemakanan($id)
-    {
-        $tables = array('matrik_transformasi', 'data_makanan');
-        $this->db->where('id', $id);
-        return $this->db->delete($tables);
+    // public function deleteduta($id)
+    // {
+    //     $tables = array('matrik_transformasi', 'data_makanan');
+    //     $this->db->where('id', $id);
+    //     return $this->db->delete($tables);
         
-    }
-    public function deletekriteria($id)
-    {
-        return $this->db->delete('data_makanan', array('id' => $id));
-    }
+    // }
+
 
 }

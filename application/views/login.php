@@ -7,13 +7,11 @@
 </head>
 <body>
 
-<nav class="navbar fixed-top navbar-dark bg-dark" style="background-color: #77E592;">
-<center><h1>SPK - Duta Genre (Metode AHP)</h1></center>
-</nav>
+
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-xs-12 col-sm-8 col-md-8"></div>
+			<div class="col-xs-12 col-sm-8 col-md-8"><img src="<?php echo base_url('assets/gambar/gambar.jpg') ?>" alt=""></div>
 			<div class="col-xs-12 col-sm-8 col-md-4">
 
 
