@@ -1,4 +1,4 @@
-				<h3>Halaman hasil penilaian</h3>	
+				<h3>Halaman hasil penilaian Peserta</h3>	
 				
 				<table id="table" class="table table-striped table-bordered">
 				<thead>
